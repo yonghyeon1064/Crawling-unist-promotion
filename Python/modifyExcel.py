@@ -18,11 +18,21 @@ startrow = 1
 #input에서 값을 읽어올때 사용하는 변수들
 row = 2
 
+#제대로 된 input인지 거르기 위한 list
+classes = ["date", "title", "source", "contents", "link"]
+
 for file in file_list:
-    if file[-5:] == ".xlsx": #모든 파일중 .xlsx 형식만 거름
+    if (file[-5:] == ".xlsx") and (file[:2] != "~$"): #모든 파일중 .xlsx 형식만 통과, .xlsx 실행중 생기는 파일은 통과x
         wb = load_workbook(filename = file)
         sheetI = wb.active
 
+        #자료의 이름을 확인해 유효한 .xlsx인지 판단
+        error = 0
+        for col in range(5):
+            if sheetI.cell(1, col+2).value != classes[col]: error=error+1
+        if error > 0: continue
+
+        #파일이름 작성
         sheetO.cell(row = startrow, column = 1, value= file )
 
         #date, 보도, 제목, 출처
