@@ -19,7 +19,12 @@ print("xlsx파일들의 제목을 교수님의 성함으로 인식합니다")
 print("크롤링을 진행할 때 미리 제목을 바꿔두세요")
 print("------------------------------------------------------------------------------\n")
 path = input("파일 경로 > ")
+
 file_list = os.listdir("./"+path)
+for i in file_list:
+    print(i)
+print("\n")
+#    print("/"+path+"/"+'"'+i+'"')
 
 #output의 어느 row에서 입력을 시작할지
 startrow = 1
@@ -32,6 +37,7 @@ classes = ["date", "title", "source", "contents", "link"]
 
 for file in file_list:
     if (file[-5:] == ".xlsx") and (file[:2] != "~$"): #모든 파일중 .xlsx 형식만 통과, .xlsx 실행중 생기는 파일은 통과x
+        
         wb = load_workbook(filename = file)
         sheetI = wb.active
 
@@ -46,6 +52,9 @@ for file in file_list:
 
         #date, 보도, 제목, 출처
         while (sheetI.cell(row, 2).value != None):
+            #name
+            sheetO.cell(startrow + row - 1, 1).value = file[:-5]
+            sheetO.cell(startrow + row - 1, 1).alignment = Alignment(horizontal='center', vertical='center')
             #date
             sheetO.cell(startrow + row - 1, 4).value = int((sheetI.cell(row, 2).value).replace(".",""))
             sheetO.cell(startrow + row - 1, 4).alignment = Alignment(horizontal='center', vertical='center')
@@ -63,8 +72,9 @@ for file in file_list:
             sheetO.cell(startrow + row - 1, 7).alignment = Alignment(horizontal='left', vertical='bottom')
 
             row = row+1
-        startrow = row+1
+        startrow += row
         row=2
+        wb.close()
 
 
 output.save(filename = "result.xlsx")
