@@ -1,0 +1,30 @@
++교수, 2022.05.07~2022.05.11, page 1
+https://search.naver.com/search.naver?where=news&sm=tab_pge&query=%EC%9C%A0%EB%8B%88%EC%8A%A4%ED%8A%B8%20%7C%20%EC%9A%B8%EC%82%B0%EA%B3%BC%EA%B8%B0%EC%9B%90%20%7C%20%EC%9A%B8%EC%82%B0%EA%B3%BC%ED%95%99%EA%B8%B0%EC%88%A0%EC%9B%90%20%7C%20unist
+%20%2B
+	%EA%B5%90%EC%88%98
+&sort=2&photo=0&field=0&pd=3
+    &ds=2022.05.07&de=2022.05.11
+&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:r,p:from
+	20220507to20220511
+,a:all&start=1
+
++교수, 2022.05.07~2022.05.11, page 2
+https://search.naver.com/search.naver?where=news&sm=tab_pge&query=%EC%9C%A0%EB%8B%88%EC%8A%A4%ED%8A%B8%20%7C%20%EC%9A%B8%EC%82%B0%EA%B3%BC%EA%B8%B0%EC%9B%90%20%7C%20%EC%9A%B8%EC%82%B0%EA%B3%BC%ED%95%99%EA%B8%B0%EC%88%A0%EC%9B%90%20%7C%20unist
+%20%2B
+    %EA%B5%90%EC%88%98
+&sort=2&photo=0&field=0&pd=3
+    &ds=2022.05.07&de=2022.05.11
+&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:r,p:from
+    20220507to20220511
+,a:all&start=11
+
+
++교수, 2022.05.03~2022.05.04, page 1
+https://search.naver.com/search.naver?where=news&sm=tab_pge&query=%EC%9C%A0%EB%8B%88%EC%8A%A4%ED%8A%B8%20%7C%20%EC%9A%B8%EC%82%B0%EA%B3%BC%EA%B8%B0%EC%9B%90%20%7C%20%EC%9A%B8%EC%82%B0%EA%B3%BC%ED%95%99%EA%B8%B0%EC%88%A0%EC%9B%90%20%7C%20unist
+%20%2B
+	%EA%B5%90%EC%88%98
+&sort=2&photo=0&field=0&pd=3&ds=
+	2022.05.03&de=2022.05.04
+&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:r,p:from
+	20220503to20220504
+,a:all&start=1
